@@ -1,6 +1,8 @@
 import os
 import urllib.request as request
 import zipfile
+import spacy
+from tmtoolkit.corpus import Corpus
 
 from mlProject import logger
 from mlProject.utils.common import get_size
@@ -13,6 +15,9 @@ class DataIngestion:
     def __init__(self, config:DataIngestionConfig):
         self.config = config
 
+    def load_data_files(self):
+        nlp = spacy.load("fr_core_news_lg")
+        corpus = Corpus.from_folder(self.config.local_data_file, language_model="fr_core_news_lg")
     def download_file(self):
         if not os.path.exists(self.config.local_data_file):
             filename,headers =request.urlretrieve(

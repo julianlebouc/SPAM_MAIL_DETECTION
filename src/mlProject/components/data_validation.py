@@ -1,6 +1,5 @@
 
-
-import os
+import os, os.path
 
 from mlProject import logger
 
@@ -15,20 +14,16 @@ class DataValidation:
 
     def validation_all_columns(self)->bool:
         try:
-            validation_status =None
-            data= pd.read_csv(self.config.unzip_data_dir)
-            all_cols =list(data.columns)
-            all_schema = self.config.all_schema.keys()
+            nb_of_files = len([name for name in os.listdir(self.config.unzip_data_dir) if os.path.isfile(name)])
+            files = os.listdir(self.config.unzip_data_dir)
+            right_file_name_format = True
+            for file_name in files:
+                if 'msg' not in file_name and 'spmsg' not in file_name:
+                    right_file_name_format = False
 
-            for col in all_cols:
-                if col not in all_schema:
-                    validation_status =False
-                    with open(self.config.STATUS_FILE, 'w') as f:
-                        f.write(f'Validation status : {validation_status}')
-                else:
-                    validation_status=True
-                    with open(self.config.STATUS_FILE,'w') as f:
-                        f.write(f'Validation status : {validation_status}')
+            validation_status = nb_of_files and right_file_name_format
+            with open(self.config.STATUS_FILE, 'w') as f:
+                f.write(f'Validation status : {validation_status}')
             return validation_status
         except Exception as e:
             raise e

@@ -1,7 +1,10 @@
 import pandas as pd
 import os
+import pickle
 from mlProject import logger
 from sklearn.linear_model import ElasticNet
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import AdaBoostClassifier
 
 import joblib
 
@@ -14,15 +17,12 @@ class ModelTrainer:
     
 
     def train(self):
-        train_data = pd.read_csv(self.config.train_data_path)
-        test_data = pd.read_csv(self.config.test_data_path)
+        with open(self.config.train_data_path, 'rb') as file:
+            data = pickle.load(file)
+        classes = pd.read_csv(self.config.test_data_path)
         
-        train_x= train_data.drop([self.config.target_column],axis=1)
-        test_x= test_data.drop([self.config.target_column],axis=1)
-        train_y= train_data[[self.config.target_column]]
-        test_y= test_data[[self.config.target_column]]
+        X_train, X_test, y_train, y_test = train_test_split(data, classes, stratify=classes, test_size=0.2)
+        clf = AdaBoostClassifier()
+        clf.fit(X_train, y_train)
 
-
-        lr =ElasticNet(alpha=self.config.alpha,l1_ratio=self.config.l1_ratio)
-        lr.fit(train_x,train_y)
-        joblib.dump(lr,os.path.join(self.config.root_dir,self.config.model_name))
+        joblib.dump(clf,os.path.join(self.config.root_dir,self.config.model_name))
