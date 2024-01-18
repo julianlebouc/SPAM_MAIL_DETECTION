@@ -2,19 +2,19 @@ artifacts_roots: artifacts
 
 data_ingestion:
   root_dir : artifacts/data_ingestion
-  source_URL: https://github.com/julianlebouc/SPAM_MAIL_DETECTION/tree/5e824d62b69d5f08fa3a17c237d2fd073fb0885c/artifacts/data_ingestion/data_mails.zip
-  local_data_file : artifacts/data_ingestion/data_mails
+  source_URL: https://github.com/julianlebouc/SPAM_MAIL_DETECTION/blob/main/artifacts/data_ingestion/data_mails.zip
+  local_data_file : artifacts/data_ingestion/data_mails/*
   unzip_dir : artifacts/data_ingestion 
 
 data_validation:
   root_dir : artifacts/data_validation
-  unzip_data_dir : artifacts/data_ingestion/data_mails
+  unzip_data_dir : artifacts/data_ingestion/data_mails/
   STATUS_FILE : artifacts/data_validation/status.txt
 
 
 data_transformation:
   root_dir : artifacts/data_transformation
-  unzip_data_dir : artifacts/data_ingestion/data_mails
+  unzip_data_dir : artifacts/data_ingestion/data_mails/
 
 
 model_trainer:

@@ -864,3 +864,127 @@ Traceback (most recent call last):
     self.fp = io.open(file, filemode)
               ^^^^^^^^^^^^^^^^^^^^^^^
 IsADirectoryError: [Errno 21] Is a directory: 'artifacts/data_ingestion/data_mails'
+[2024-01-18 10:14:44,475:INFO: main: >>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-18 10:14:44,479:INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-01-18 10:14:44,481:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 10:14:44,482:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 10:14:44,483:INFO: common: created directory at: artifacts]
+[2024-01-18 10:14:44,483:INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-18 10:14:44,483:INFO: data_ingestion: File already exists of size : ~ 90 KB]
+[2024-01-18 10:14:44,483:ERROR: main: [Errno 21] Is a directory: 'artifacts/data_ingestion/data_mails']
+Traceback (most recent call last):
+  File "/Users/tachet/Documents/GitHub/SPAM_MAIL_DETECTION/main.py", line 20, in <module>
+    data_ingestion.main()
+  File "/Users/tachet/Documents/GitHub/SPAM_MAIL_DETECTION/src/mlProject/pipeline/stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/tachet/Documents/GitHub/SPAM_MAIL_DETECTION/src/mlProject/components/data_ingestion.py", line 35, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file,'r') as zip_ref:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tachet/opt/anaconda3/envs/MlOps/lib/python3.12/zipfile/__init__.py", line 1320, in __init__
+    self.fp = io.open(file, filemode)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+IsADirectoryError: [Errno 21] Is a directory: 'artifacts/data_ingestion/data_mails'
+[2024-01-18 10:17:04,924:INFO: main: >>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-18 10:17:04,929:INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-01-18 10:17:04,930:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 10:17:04,931:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 10:17:04,931:INFO: common: created directory at: artifacts]
+[2024-01-18 10:17:04,931:INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-18 10:17:04,931:INFO: data_ingestion: File already exists of size : ~ 90 KB]
+[2024-01-18 10:17:04,931:ERROR: main: [Errno 21] Is a directory: 'artifacts/data_ingestion/data_mails/']
+Traceback (most recent call last):
+  File "/Users/tachet/Documents/GitHub/SPAM_MAIL_DETECTION/main.py", line 20, in <module>
+    data_ingestion.main()
+  File "/Users/tachet/Documents/GitHub/SPAM_MAIL_DETECTION/src/mlProject/pipeline/stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/tachet/Documents/GitHub/SPAM_MAIL_DETECTION/src/mlProject/components/data_ingestion.py", line 35, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file,'r') as zip_ref:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tachet/opt/anaconda3/envs/MlOps/lib/python3.12/zipfile/__init__.py", line 1320, in __init__
+    self.fp = io.open(file, filemode)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+IsADirectoryError: [Errno 21] Is a directory: 'artifacts/data_ingestion/data_mails/'
+[2024-01-18 10:17:21,154:INFO: main: >>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-18 10:17:21,157:INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-01-18 10:17:21,158:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 10:17:21,159:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 10:17:21,159:INFO: common: created directory at: artifacts]
+[2024-01-18 10:17:21,159:INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-18 10:17:21,640:ERROR: main: HTTP Error 404: Not Found]
+Traceback (most recent call last):
+  File "/Users/tachet/Documents/GitHub/SPAM_MAIL_DETECTION/main.py", line 20, in <module>
+    data_ingestion.main()
+  File "/Users/tachet/Documents/GitHub/SPAM_MAIL_DETECTION/src/mlProject/pipeline/stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "/Users/tachet/Documents/GitHub/SPAM_MAIL_DETECTION/src/mlProject/components/data_ingestion.py", line 24, in download_file
+    filename,headers =request.urlretrieve(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tachet/opt/anaconda3/envs/MlOps/lib/python3.12/urllib/request.py", line 240, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+                            ^^^^^^^^^^^^^^^^^^
+  File "/Users/tachet/opt/anaconda3/envs/MlOps/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tachet/opt/anaconda3/envs/MlOps/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/tachet/opt/anaconda3/envs/MlOps/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/Users/tachet/opt/anaconda3/envs/MlOps/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tachet/opt/anaconda3/envs/MlOps/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/Users/tachet/opt/anaconda3/envs/MlOps/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+[2024-01-18 10:19:06,487:INFO: main: >>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-18 10:19:06,490:INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-01-18 10:19:06,492:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 10:19:06,493:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 10:19:06,494:INFO: common: created directory at: artifacts]
+[2024-01-18 10:19:06,494:INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-18 10:19:07,788:INFO: data_ingestion: artifacts/data_ingestion/data_mails/* download! with following info: 
+Server: GitHub.com
+Date: Thu, 18 Jan 2024 09:19:07 GMT
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With
+ETag: W/"a6ff376ad91538c50314841fa2d9e446"
+Cache-Control: max-age=0, private, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer-when-downgrade
+Content-Security-Policy: default-src 'none'; base-uri 'self'; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events api.githubcopilot.com objects-origin.githubusercontent.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/
+Set-Cookie: _gh_sess=Y4kV97o8AxieM1QYtKMVHLwhUV2fLXnb4NUY27MfbrHa3607y75h2VxAIq2zALAciLfXuYupIiFW0XZ6vakGutTHPH7X4gVoDYU7sO%2BXHy4etiuriKyMIx7zMzosWPjViruRrlXPdL7Uw9RMEkN7TnPMLRUGChjWDTqaS8fMjMAVLu7ApWy6apZIeoaLunA63g4qznul9x1c5L4P9jCcyWK74zttyfQZyD8JteuBLp9Ommgipq4g8ztlArXMgegNtG3nIMJmPcxq75by7nkpIw%3D%3D--KeGF2PsqI%2BgstDMw--ExNFYGu7OFsAhn%2B2qGSfeQ%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: _octo=GH1.1.1358373184.1705569547; Path=/; Domain=github.com; Expires=Sat, 18 Jan 2025 09:19:07 GMT; Secure; SameSite=Lax
+Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Sat, 18 Jan 2025 09:19:07 GMT; HttpOnly; Secure; SameSite=Lax
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-GitHub-Request-Id: D454:2D48B9:FED10CB:101A3562:65A8ED0A
+connection: close
+
+]
+[2024-01-18 10:19:07,789:ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "/Users/tachet/Documents/GitHub/SPAM_MAIL_DETECTION/main.py", line 20, in <module>
+    data_ingestion.main()
+  File "/Users/tachet/Documents/GitHub/SPAM_MAIL_DETECTION/src/mlProject/pipeline/stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/tachet/Documents/GitHub/SPAM_MAIL_DETECTION/src/mlProject/components/data_ingestion.py", line 35, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file,'r') as zip_ref:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tachet/opt/anaconda3/envs/MlOps/lib/python3.12/zipfile/__init__.py", line 1338, in __init__
+    self._RealGetContents()
+  File "/Users/tachet/opt/anaconda3/envs/MlOps/lib/python3.12/zipfile/__init__.py", line 1405, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-01-18 10:19:55,715:INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-01-18 10:19:55,717:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 10:19:55,719:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 10:19:55,720:INFO: common: created directory at: artifacts]
+[2024-01-18 10:19:55,721:INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-18 10:19:55,722:INFO: 2715557891: File already exists of size : ~ 132 KB]
