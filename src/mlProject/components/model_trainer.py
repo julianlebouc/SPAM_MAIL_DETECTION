@@ -19,7 +19,8 @@ class ModelTrainer:
     def train(self):
         with open(self.config.train_data_path, 'rb') as file:
             data = pickle.load(file)
-        classes = pd.read_csv(self.config.test_data_path)
+        with open(self.config.test_data_path, 'rb') as file:
+            classes = pickle.load(file)
         
         X_train, X_test, y_train, y_test = train_test_split(data, classes, stratify=classes, test_size=0.2)
         clf = AdaBoostClassifier()

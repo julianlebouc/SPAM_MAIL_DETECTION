@@ -41,6 +41,7 @@ class ModelTrainerConfig:
 class ModelEvaluationConfig:
     root_dir:Path
     test_data_path :Path
+    train_data_path : Path
     model_path: Path
     all_params:dict
     metric_file_name:Path

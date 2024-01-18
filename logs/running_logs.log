@@ -1384,3 +1384,157 @@ Traceback (most recent call last):
   File "C:\Users\Julian\anaconda3\lib\site-packages\pandas\io\common.py", line 789, in get_handle
     handle = open(
 FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_transformation/classes.csv'
+[2024-01-18 14:51:17,682:INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 14:51:22,241:INFO: main: >>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-18 14:51:22,246:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 14:51:22,248:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 14:51:22,250:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 14:51:22,251:INFO: common: created directory at: artifacts]
+[2024-01-18 14:51:22,251:INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-18 14:51:22,252:INFO: data_ingestion: File already exists of size : ~ 4315 KB]
+[2024-01-18 14:51:24,378:INFO: main: >>>>> stage Data Ingestion stage complated <<<<<
+
+x======x]
+[2024-01-18 14:51:24,379:INFO: main: >>>> stage Data Validation stage started <<<<<<]
+[2024-01-18 14:51:24,383:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 14:51:24,384:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 14:51:24,386:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 14:51:24,388:INFO: common: created directory at: artifacts]
+[2024-01-18 14:51:24,418:INFO: common: created directory at: artifacts/data_validation]
+[2024-01-18 14:51:24,448:INFO: main: >>>>> stage Data Validation stage complated <<<<<
+
+x======x]
+[2024-01-18 14:51:24,449:INFO: main: >>>> stage Data Transformation stage started <<<<<<]
+[2024-01-18 14:51:24,479:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 14:51:24,480:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 14:51:24,481:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 14:51:24,482:INFO: common: created directory at: artifacts]
+[2024-01-18 14:51:24,483:INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-18 14:55:14,472:INFO: main: >>>>> stage Data Transformation stage complated <<<<<
+
+x======x]
+[2024-01-18 14:55:14,472:INFO: main: >>>> stage Model Trainer stage started <<<<<<]
+[2024-01-18 14:55:14,478:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 14:55:14,482:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 14:55:14,485:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 14:55:14,487:INFO: common: created directory at: artifacts]
+[2024-01-18 14:55:14,488:INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 14:55:21,351:INFO: main: >>>>> stage Model Trainer stage complated <<<<<
+
+x======x]
+[2024-01-18 14:55:21,351:INFO: main: >>>> stage Model Evaluation stage started <<<<<<]
+[2024-01-18 14:55:21,355:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 14:55:21,356:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 14:55:21,359:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 14:55:21,359:INFO: common: created directory at: artifacts]
+[2024-01-18 14:55:21,359:INFO: common: created directory at: artifacts/model_evaluation]
+[2024-01-18 14:55:21,360:ERROR: main: 'ModelEvaluationConfig' object has no attribute 'train_data_path']
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\COURS\MLO-Edge_Cloud_Computing\SPAM_MAIL_DETECTION\main.py", line 82, in <module>
+    data_evaluation.main()
+  File "C:\Users\Julian\Desktop\COURS\MLO-Edge_Cloud_Computing\SPAM_MAIL_DETECTION\src\mlProject\pipeline\stage_05_model_evaluation.py", line 18, in main
+    model_trainer.log_into_mlflow()
+  File "C:\Users\Julian\Desktop\COURS\MLO-Edge_Cloud_Computing\SPAM_MAIL_DETECTION\src\mlProject\components\model_evaluation.py", line 31, in log_into_mlflow
+    with open(self.config.train_data_path, 'rb') as file:
+AttributeError: 'ModelEvaluationConfig' object has no attribute 'train_data_path'
+[2024-01-18 14:58:41,382:INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 14:58:46,635:INFO: main: >>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-18 14:58:46,640:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 14:58:46,642:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 14:58:46,645:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 14:58:46,646:INFO: common: created directory at: artifacts]
+[2024-01-18 14:58:46,646:INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-18 14:58:46,647:INFO: data_ingestion: File already exists of size : ~ 4315 KB]
+[2024-01-18 14:58:48,642:INFO: main: >>>>> stage Data Ingestion stage complated <<<<<
+
+x======x]
+[2024-01-18 14:58:48,643:INFO: main: >>>> stage Data Validation stage started <<<<<<]
+[2024-01-18 14:58:48,648:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 14:58:48,650:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 14:58:48,653:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 14:58:48,653:INFO: common: created directory at: artifacts]
+[2024-01-18 14:58:48,654:INFO: common: created directory at: artifacts/data_validation]
+[2024-01-18 14:58:48,666:INFO: main: >>>>> stage Data Validation stage complated <<<<<
+
+x======x]
+[2024-01-18 14:58:48,667:INFO: main: >>>> stage Data Transformation stage started <<<<<<]
+[2024-01-18 14:58:48,681:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 14:58:48,683:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 14:58:48,685:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 14:58:48,686:INFO: common: created directory at: artifacts]
+[2024-01-18 14:58:48,687:INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-18 15:02:37,973:INFO: main: >>>>> stage Data Transformation stage complated <<<<<
+
+x======x]
+[2024-01-18 15:02:37,974:INFO: main: >>>> stage Model Trainer stage started <<<<<<]
+[2024-01-18 15:02:37,979:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 15:02:37,982:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 15:02:37,984:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 15:02:37,986:INFO: common: created directory at: artifacts]
+[2024-01-18 15:02:37,987:INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 15:02:44,981:INFO: main: >>>>> stage Model Trainer stage complated <<<<<
+
+x======x]
+[2024-01-18 15:02:44,981:INFO: main: >>>> stage Model Evaluation stage started <<<<<<]
+[2024-01-18 15:02:44,986:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 15:02:44,986:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 15:02:44,988:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 15:02:44,989:INFO: common: created directory at: artifacts]
+[2024-01-18 15:02:44,989:INFO: common: created directory at: artifacts/model_evaluation]
+[2024-01-18 15:02:44,990:ERROR: main: __init__() missing 1 required positional argument: 'train_data_path']
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\COURS\MLO-Edge_Cloud_Computing\SPAM_MAIL_DETECTION\main.py", line 82, in <module>
+    data_evaluation.main()
+  File "C:\Users\Julian\Desktop\COURS\MLO-Edge_Cloud_Computing\SPAM_MAIL_DETECTION\src\mlProject\pipeline\stage_05_model_evaluation.py", line 16, in main
+    model_evaluation_config=config.get_model_evaluation_config()
+  File "C:\Users\Julian\Desktop\COURS\MLO-Edge_Cloud_Computing\SPAM_MAIL_DETECTION\src\mlProject\config\configuration.py", line 82, in get_model_evaluation_config
+    model_evaluation_config=ModelEvaluationConfig(
+TypeError: __init__() missing 1 required positional argument: 'train_data_path'
+[2024-01-18 15:04:03,616:INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 15:04:07,990:INFO: main: >>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-18 15:04:07,995:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 15:04:07,996:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 15:04:07,997:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 15:04:07,998:INFO: common: created directory at: artifacts]
+[2024-01-18 15:04:07,999:INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-18 15:04:07,999:INFO: data_ingestion: File already exists of size : ~ 4315 KB]
+[2024-01-18 15:04:10,033:INFO: main: >>>>> stage Data Ingestion stage complated <<<<<
+
+x======x]
+[2024-01-18 15:04:10,034:INFO: main: >>>> stage Data Validation stage started <<<<<<]
+[2024-01-18 15:04:10,043:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 15:04:10,047:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 15:04:10,050:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 15:04:10,051:INFO: common: created directory at: artifacts]
+[2024-01-18 15:04:10,052:INFO: common: created directory at: artifacts/data_validation]
+[2024-01-18 15:04:10,061:INFO: main: >>>>> stage Data Validation stage complated <<<<<
+
+x======x]
+[2024-01-18 15:04:10,062:INFO: main: >>>> stage Data Transformation stage started <<<<<<]
+[2024-01-18 15:04:10,084:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 15:04:10,086:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 15:04:10,088:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 15:04:10,089:INFO: common: created directory at: artifacts]
+[2024-01-18 15:04:10,091:INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-18 15:07:57,715:INFO: main: >>>>> stage Data Transformation stage complated <<<<<
+
+x======x]
+[2024-01-18 15:07:57,716:INFO: main: >>>> stage Model Trainer stage started <<<<<<]
+[2024-01-18 15:07:57,721:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 15:07:57,724:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 15:07:57,726:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 15:07:57,726:INFO: common: created directory at: artifacts]
+[2024-01-18 15:07:57,727:INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 15:08:04,572:INFO: main: >>>>> stage Model Trainer stage complated <<<<<
+
+x======x]
+[2024-01-18 15:08:04,572:INFO: main: >>>> stage Model Evaluation stage started <<<<<<]
+[2024-01-18 15:08:04,576:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 15:08:04,576:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 15:08:04,577:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 15:08:04,578:INFO: common: created directory at: artifacts]
+[2024-01-18 15:08:04,579:INFO: common: created directory at: artifacts/model_evaluation]
+[2024-01-18 15:08:05,030:INFO: common: json file saved at: artifacts\model_evaluation\metrics.json]
+[2024-01-18 15:08:06,966:INFO: main: >>>>> stage Model Evaluation stage complated <<<<<
+
+x======x]

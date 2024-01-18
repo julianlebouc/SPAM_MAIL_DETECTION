@@ -82,6 +82,7 @@ class ConfigurationManager:
         model_evaluation_config=ModelEvaluationConfig(
             root_dir=config.root_dir,
             test_data_path= config.test_data_path,
+            train_data_path=config.train_data_path,
             model_path= config.model_path,
             all_params= params,
             metric_file_name= config.metric_file_name,

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/asini/Workspace/Enseignement/M2/MLOps/e2e-mlops/mlruns/0/9dc475a692a04fa4a65353d53736d0fd/artifacts
+end_time: 1705586886962
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9dc475a692a04fa4a65353d53736d0fd
+run_name: mercurial-ox-629
+run_uuid: 9dc475a692a04fa4a65353d53736d0fd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705586884908
+status: 3
+tags: []
+user_id: Julian

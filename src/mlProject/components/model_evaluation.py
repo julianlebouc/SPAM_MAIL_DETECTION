@@ -30,7 +30,8 @@ class ModelEvaluation:
     def log_into_mlflow(self):
         with open(self.config.train_data_path, 'rb') as file:
             data = pickle.load(file)
-        classes = pd.read_csv(self.config.test_data_path)
+        with open(self.config.test_data_path, 'rb') as file:
+            classes = pickle.load(file)
         
         X_train, test_x, y_train, test_y = train_test_split(data, classes, stratify=classes, test_size=0.2)
         model=joblib.load(self.config.model_path)

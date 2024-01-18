@@ -57,7 +57,8 @@ class DataTransformation:
             pickle.dump(tfidf_mat_train, file)
         #On tient compte du fait que dtm change l'ordre des documents. Les targets à prédire sont donc modifiées pour suivre l'ordre des matrices
         new_train_class = [classes_dico[id_doc] for id_doc in doc_labels(train_corpus_l)]
-        # on sauvegarde nos classes en csv
-        new_train_class.to_csv(os.path.join(self.config.root_dir,'classes.csv'),index=False)
+        # on sauvegarde nos classes dans un fichier pickle
+        with open(os.path.join(self.config.root_dir,'classes.pkl'), 'wb') as file:
+            pickle.dump(new_train_class, file)
     
         
