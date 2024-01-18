@@ -4,4 +4,4 @@ COLUMNS:
 
 
 TARGET_COLUMN:
-  label: string
+  name: string
