@@ -1058,3 +1058,94 @@ zipfile.BadZipFile: File is not a zip file
 [2024-01-18 10:34:07,455:INFO: common: created directory at: artifacts]
 [2024-01-18 10:34:07,456:INFO: common: created directory at: artifacts/data_ingestion]
 [2024-01-18 10:34:07,457:INFO: 450996047: File already exists of size : ~ 4315 KB]
+[2024-01-18 10:37:02,468:INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 10:37:06,180:INFO: main: >>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-18 10:37:06,184:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 10:37:06,184:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 10:37:06,186:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 10:37:06,186:INFO: common: created directory at: artifacts]
+[2024-01-18 10:37:06,187:INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-18 10:37:06,187:INFO: data_ingestion: File already exists of size : ~ 4315 KB]
+[2024-01-18 10:37:08,662:INFO: main: >>>>> stage Data Ingestion stage complated <<<<<
+
+x======x]
+[2024-01-18 10:37:08,663:INFO: main: >>>> stage Data Validation stage started <<<<<<]
+[2024-01-18 10:37:08,667:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 10:37:08,668:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 10:37:08,670:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 10:37:08,671:INFO: common: created directory at: artifacts]
+[2024-01-18 10:37:08,671:INFO: common: created directory at: artifacts/data_validation]
+[2024-01-18 10:37:08,682:INFO: main: >>>>> stage Data Validation stage complated <<<<<
+
+x======x]
+[2024-01-18 10:37:08,683:INFO: main: >>>> stage Data Transformation stage started <<<<<<]
+[2024-01-18 10:37:08,692:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 10:37:08,694:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 10:37:08,697:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 10:37:08,699:INFO: common: created directory at: artifacts]
+[2024-01-18 10:37:08,700:INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-18 10:37:18,776:INFO: main: >>>>> stage Data Transformation stage complated <<<<<
+
+x======x]
+[2024-01-18 10:37:18,777:INFO: main: >>>> stage Model Trainer stage started <<<<<<]
+[2024-01-18 10:37:18,782:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 10:37:18,783:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 10:37:18,785:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 10:37:18,786:INFO: common: created directory at: artifacts]
+[2024-01-18 10:37:18,786:INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 10:37:18,787:ERROR: main: "'ConfigBox' object has no attribute 'name'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\COURS\MLO-Edge_Cloud_Computing\SPAM_MAIL_DETECTION\main.py", line 66, in <module>
+    model_trainer.main()
+  File "C:\Users\Julian\Desktop\COURS\MLO-Edge_Cloud_Computing\SPAM_MAIL_DETECTION\src\mlProject\pipeline\stage_04_model_trainer.py", line 16, in main
+    model_trainer_config=config.get_model_trainer()
+  File "C:\Users\Julian\Desktop\COURS\MLO-Edge_Cloud_Computing\SPAM_MAIL_DETECTION\src\mlProject\config\configuration.py", line 70, in get_model_trainer
+    target_column= schema.name
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'name'"

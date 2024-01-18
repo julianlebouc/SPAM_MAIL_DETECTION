@@ -14,8 +14,9 @@ class DataValidation:
 
     def validation_all_columns(self)->bool:
         try:
-            nb_of_files = len([name for name in os.listdir(self.config.unzip_data_dir) if os.path.isfile(name)])
-            files = os.listdir(self.config.unzip_data_dir)
+            _, _, files = next(os.walk(self.config.unzip_data_dir)) 
+            nb_of_files = len(files) 
+            print("nb de fichiers : ", nb_of_files)
             right_file_name_format = True
             for file_name in files:
                 if 'msg' not in file_name and 'spmsg' not in file_name:
