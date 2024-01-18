@@ -1,10 +1,10 @@
-from mlProject.config.configuration import ConfigurationManager
-from mlProject.components.model_evaluation import ModelEvaluation
+from src.mlProject.config.configuration import ConfigurationManager
+from src.mlProject.components.model_evaluation import ModelEvaluation
 
-from mlProject import logger
+from src.mlProject import logger
 from pathlib import Path
 
-from mlProject import logger
+from src.mlProject import logger
 
 class ModelEvaluationTrainingPipeline:
     def __init__(self):

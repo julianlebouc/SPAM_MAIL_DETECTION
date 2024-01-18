@@ -11,9 +11,9 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score
 
 
 
-from mlProject.entity.config_entity import ModelEvaluationConfig
-from mlProject.constants import *
-from mlProject.utils.common import read_yaml, create_directories,save_json
+from src.mlProject.entity.config_entity import ModelEvaluationConfig
+from src.mlProject.constants import *
+from src.mlProject.utils.common import read_yaml, create_directories,save_json
 
 
 

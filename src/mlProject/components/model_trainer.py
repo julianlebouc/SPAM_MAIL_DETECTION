@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 import pickle
-from mlProject import logger
+from src.mlProject import logger
 from sklearn.linear_model import ElasticNet
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import AdaBoostClassifier
@@ -9,7 +9,7 @@ from sklearn.ensemble import AdaBoostClassifier
 import joblib
 
 
-from mlProject.entity.config_entity import ModelTrainerConfig
+from src.mlProject.entity.config_entity import ModelTrainerConfig
 
 class ModelTrainer:
     def __init__(self, config: ModelTrainerConfig):

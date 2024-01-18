@@ -1,9 +1,9 @@
-from mlProject.config.configuration import ConfigurationManager
-from mlProject.components.data_validation import DataValidation
-from mlProject import logger
+from src.mlProject.config.configuration import ConfigurationManager
+from src.mlProject.components.data_validation import DataValidation
+from src.mlProject import logger
 
 
-from mlProject import logger
+from src.mlProject import logger
 
 class DataValidationTrainingPipeline:
     def __init__(self):

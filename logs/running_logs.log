@@ -844,3 +844,23 @@ x======x]
 [2023-10-26 18:40:37,236:INFO: _internal: 172.18.206.135 - - [26/Oct/2023 18:40:37] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
 [2023-10-26 18:40:37,237:INFO: _internal: 172.18.206.135 - - [26/Oct/2023 18:40:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
 [2023-10-26 18:40:37,264:INFO: _internal: 172.18.206.135 - - [26/Oct/2023 18:40:37] "[33mGET /static/assets/img/wine.gif HTTP/1.1[0m" 404 -]
+[2024-01-18 10:07:49,556:INFO: main: >>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-18 10:07:49,558:INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-01-18 10:07:49,559:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 10:07:49,560:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 10:07:49,560:INFO: common: created directory at: artifacts]
+[2024-01-18 10:07:49,560:INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-18 10:07:49,560:INFO: data_ingestion: File already exists of size : ~ 90 KB]
+[2024-01-18 10:07:49,561:ERROR: main: [Errno 21] Is a directory: 'artifacts/data_ingestion/data_mails']
+Traceback (most recent call last):
+  File "/Users/tachet/Documents/GitHub/SPAM_MAIL_DETECTION/main.py", line 20, in <module>
+    data_ingestion.main()
+  File "/Users/tachet/Documents/GitHub/SPAM_MAIL_DETECTION/src/mlProject/pipeline/stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/tachet/Documents/GitHub/SPAM_MAIL_DETECTION/src/mlProject/components/data_ingestion.py", line 35, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file,'r') as zip_ref:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tachet/opt/anaconda3/envs/MlOps/lib/python3.12/zipfile/__init__.py", line 1320, in __init__
+    self.fp = io.open(file, filemode)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+IsADirectoryError: [Errno 21] Is a directory: 'artifacts/data_ingestion/data_mails'

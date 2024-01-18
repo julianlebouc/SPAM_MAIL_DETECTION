@@ -1,5 +1,5 @@
 import os
-from mlProject import logger
+from src.mlProject import logger
 from sklearn.model_selection import train_test_split
 import pandas as pd
 import numpy as np
@@ -16,7 +16,7 @@ from tmtoolkit.corpus import vocabulary
 from tmtoolkit.bow.dtm import create_sparse_dtm
 from tmtoolkit.corpus import dtm
 from tmtoolkit.bow.bow_stats import tfidf, tf_proportions, idf
-from mlProject.entity.config_entity import DataTransformationConfig
+from src.mlProject.entity.config_entity import DataTransformationConfig
 
 
 class DataTransformation:
