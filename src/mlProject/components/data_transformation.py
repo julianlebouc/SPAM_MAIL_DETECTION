@@ -27,7 +27,7 @@ class DataTransformation:
     def train_test_spliting(self):
         # chargement des fichiers .txt en un corpus
         nlp = spacy.load("fr_core_news_lg")
-        corpus = Corpus.from_folder("data", language_model="fr_core_news_lg")
+        corpus = Corpus.from_folder(self.config.data_path, language_model="fr_core_news_lg")
         # on extrait les noms des fichiers pour créer un dictionnaire contenant la classe des mails (spam ou not-spam)
         labels = doc_labels(corpus)
         classes = []
@@ -52,7 +52,6 @@ class DataTransformation:
         #on met notre corpus en une représentation tf-idf
         mat_dtm_train = dtm(train_corpus_l)
         tfidf_mat_train = tfidf(mat_dtm_train, tf_func=tf_proportions, idf_func=idf)
-        tfidf_mat_train.to_csv(os.path.join(self.config.root_dir,'data.csv'))
         # on sauvegarde la tf-idf dans un fichier pickle
         with open(os.path.join(self.config.root_dir,'data.pkl'), 'wb') as file:
             pickle.dump(tfidf_mat_train, file)

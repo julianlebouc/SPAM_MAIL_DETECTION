@@ -1240,3 +1240,147 @@ Traceback (most recent call last):
   File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
   File "box\box.py", line 552, in box.box.Box.__getattr__
 box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'name'"
+[2024-01-18 10:42:40,978:INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 10:42:44,601:INFO: main: >>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-18 10:42:44,605:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 10:42:44,606:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 10:42:44,615:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 10:42:44,616:INFO: common: created directory at: artifacts]
+[2024-01-18 10:42:44,616:INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-18 10:42:44,617:INFO: data_ingestion: File already exists of size : ~ 4315 KB]
+[2024-01-18 10:42:46,508:INFO: main: >>>>> stage Data Ingestion stage complated <<<<<
+
+x======x]
+[2024-01-18 10:42:46,509:INFO: main: >>>> stage Data Validation stage started <<<<<<]
+[2024-01-18 10:42:46,516:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 10:42:46,518:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 10:42:46,520:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 10:42:46,522:INFO: common: created directory at: artifacts]
+[2024-01-18 10:42:46,524:INFO: common: created directory at: artifacts/data_validation]
+[2024-01-18 10:42:46,536:INFO: main: >>>>> stage Data Validation stage complated <<<<<
+
+x======x]
+[2024-01-18 10:42:46,537:INFO: main: >>>> stage Data Transformation stage started <<<<<<]
+[2024-01-18 10:42:46,548:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 10:42:46,549:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 10:42:46,550:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 10:42:46,551:INFO: common: created directory at: artifacts]
+[2024-01-18 10:42:46,551:INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-18 10:42:56,442:INFO: main: >>>>> stage Data Transformation stage complated <<<<<
+
+x======x]
+[2024-01-18 10:42:56,443:INFO: main: >>>> stage Model Trainer stage started <<<<<<]
+[2024-01-18 10:42:56,449:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 10:42:56,452:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 10:42:56,453:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 10:42:56,454:INFO: common: created directory at: artifacts]
+[2024-01-18 10:42:56,455:INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 10:42:56,455:ERROR: main: [Errno 2] No such file or directory: 'artifacts/data_transformation/data.pkl']
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\COURS\MLO-Edge_Cloud_Computing\SPAM_MAIL_DETECTION\main.py", line 66, in <module>
+    model_trainer.main()
+  File "C:\Users\Julian\Desktop\COURS\MLO-Edge_Cloud_Computing\SPAM_MAIL_DETECTION\src\mlProject\pipeline\stage_04_model_trainer.py", line 18, in main
+    model_trainer.train()
+  File "C:\Users\Julian\Desktop\COURS\MLO-Edge_Cloud_Computing\SPAM_MAIL_DETECTION\src\mlProject\components\model_trainer.py", line 20, in train
+    with open(self.config.train_data_path, 'rb') as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_transformation/data.pkl'
+[2024-01-18 10:44:19,758:INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 10:44:23,342:INFO: main: >>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-18 10:44:23,346:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 10:44:23,347:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 10:44:23,349:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 10:44:23,349:INFO: common: created directory at: artifacts]
+[2024-01-18 10:44:23,350:INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-18 10:44:23,351:INFO: data_ingestion: File already exists of size : ~ 4315 KB]
+[2024-01-18 10:44:25,391:INFO: main: >>>>> stage Data Ingestion stage complated <<<<<
+
+x======x]
+[2024-01-18 10:44:25,392:INFO: main: >>>> stage Data Validation stage started <<<<<<]
+[2024-01-18 10:44:25,400:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 10:44:25,403:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 10:44:25,406:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 10:44:25,407:INFO: common: created directory at: artifacts]
+[2024-01-18 10:44:25,408:INFO: common: created directory at: artifacts/data_validation]
+[2024-01-18 10:44:25,420:INFO: main: >>>>> stage Data Validation stage complated <<<<<
+
+x======x]
+[2024-01-18 10:44:25,421:INFO: main: >>>> stage Data Transformation stage started <<<<<<]
+[2024-01-18 10:44:25,431:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 10:44:25,434:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 10:44:25,437:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 10:44:25,438:INFO: common: created directory at: artifacts]
+[2024-01-18 10:44:25,439:INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-18 10:48:17,601:INFO: main: >>>>> stage Data Transformation stage complated <<<<<
+
+x======x]
+[2024-01-18 10:48:17,602:INFO: main: >>>> stage Model Trainer stage started <<<<<<]
+[2024-01-18 10:48:17,607:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 10:48:17,609:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 10:48:17,610:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 10:48:17,611:INFO: common: created directory at: artifacts]
+[2024-01-18 10:48:17,612:INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 10:48:17,612:ERROR: main: [Errno 2] No such file or directory: 'artifacts/data_transformation/data.pkl']
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\COURS\MLO-Edge_Cloud_Computing\SPAM_MAIL_DETECTION\main.py", line 66, in <module>
+    model_trainer.main()
+  File "C:\Users\Julian\Desktop\COURS\MLO-Edge_Cloud_Computing\SPAM_MAIL_DETECTION\src\mlProject\pipeline\stage_04_model_trainer.py", line 18, in main
+    model_trainer.train()
+  File "C:\Users\Julian\Desktop\COURS\MLO-Edge_Cloud_Computing\SPAM_MAIL_DETECTION\src\mlProject\components\model_trainer.py", line 20, in train
+    with open(self.config.train_data_path, 'rb') as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_transformation/data.pkl'
+[2024-01-18 10:49:38,467:INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 10:49:42,599:INFO: main: >>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-18 10:49:42,603:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 10:49:42,604:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 10:49:42,605:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 10:49:42,606:INFO: common: created directory at: artifacts]
+[2024-01-18 10:49:42,607:INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-18 10:49:42,607:INFO: data_ingestion: File already exists of size : ~ 4315 KB]
+[2024-01-18 10:49:44,769:INFO: main: >>>>> stage Data Ingestion stage complated <<<<<
+
+x======x]
+[2024-01-18 10:49:44,769:INFO: main: >>>> stage Data Validation stage started <<<<<<]
+[2024-01-18 10:49:44,777:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 10:49:44,779:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 10:49:44,780:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 10:49:44,781:INFO: common: created directory at: artifacts]
+[2024-01-18 10:49:44,782:INFO: common: created directory at: artifacts/data_validation]
+[2024-01-18 10:49:44,794:INFO: main: >>>>> stage Data Validation stage complated <<<<<
+
+x======x]
+[2024-01-18 10:49:44,795:INFO: main: >>>> stage Data Transformation stage started <<<<<<]
+[2024-01-18 10:49:44,810:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 10:49:44,812:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 10:49:44,814:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 10:49:44,815:INFO: common: created directory at: artifacts]
+[2024-01-18 10:49:44,816:INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-18 10:54:13,023:INFO: main: >>>>> stage Data Transformation stage complated <<<<<
+
+x======x]
+[2024-01-18 10:54:13,025:INFO: main: >>>> stage Model Trainer stage started <<<<<<]
+[2024-01-18 10:54:13,029:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 10:54:13,031:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 10:54:13,032:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-18 10:54:13,034:INFO: common: created directory at: artifacts]
+[2024-01-18 10:54:13,034:INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 10:54:13,085:ERROR: main: [Errno 2] No such file or directory: 'artifacts/data_transformation/classes.csv']
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\COURS\MLO-Edge_Cloud_Computing\SPAM_MAIL_DETECTION\main.py", line 66, in <module>
+    model_trainer.main()
+  File "C:\Users\Julian\Desktop\COURS\MLO-Edge_Cloud_Computing\SPAM_MAIL_DETECTION\src\mlProject\pipeline\stage_04_model_trainer.py", line 18, in main
+    model_trainer.train()
+  File "C:\Users\Julian\Desktop\COURS\MLO-Edge_Cloud_Computing\SPAM_MAIL_DETECTION\src\mlProject\components\model_trainer.py", line 22, in train
+    classes = pd.read_csv(self.config.test_data_path)
+  File "C:\Users\Julian\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Julian\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Julian\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Julian\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Julian\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\Julian\anaconda3\lib\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_transformation/classes.csv'
