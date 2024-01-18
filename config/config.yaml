@@ -3,8 +3,8 @@ artifacts_roots: artifacts
 data_ingestion:
   root_dir : artifacts/data_ingestion
   source_URL: https://github.com/julianlebouc/SPAM_MAIL_DETECTION/blob/main/artifacts/data_ingestion/data_mails.zip
-  local_data_file : artifacts/data_ingestion/data_mails/*
-  unzip_dir : artifacts/data_ingestion 
+  local_data_file : artifacts/data_ingestion/data_mails.zip
+  unzip_dir : artifacts/data_ingestion/
 
 data_validation:
   root_dir : artifacts/data_validation
