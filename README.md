@@ -10,7 +10,7 @@ https://github.com/julianlebouc/SPAM_MAIL_DETECTION
 ```
 
 ## Option 1 : With MLFlow Projects
-Please be aware some dependencied might be missing !
+Please be aware some dependencies might be missing !
 ### Training Pipeline :
 ```bash
 mlflow run path/to/git/repo -e main
