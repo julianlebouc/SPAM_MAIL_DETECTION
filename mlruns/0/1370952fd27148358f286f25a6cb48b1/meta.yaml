@@ -1,0 +1,15 @@
+artifact_uri: file://C:/Users/Julian/OneDrive/Desktop/COURS/S9/MLOPS/SPAM_MAIL_DETECTION/mlruns/0/1370952fd27148358f286f25a6cb48b1/artifacts
+end_time: 1706902377310
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1370952fd27148358f286f25a6cb48b1
+run_name: painted-rook-562
+run_uuid: 1370952fd27148358f286f25a6cb48b1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706902370820
+status: 4
+tags: []
+user_id: Julian
