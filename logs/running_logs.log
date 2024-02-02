@@ -2761,3 +2761,53 @@ x======x]
 [2024-02-02 18:30:04,438:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 18:30:04] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
 [2024-02-02 18:30:04,438:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 18:30:04] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
 [2024-02-02 18:30:04,459:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 18:30:04] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 19:23:26,063:INFO: utils: NumExpr defaulting to 6 threads.]
+[2024-02-02 19:23:29,853:INFO: main: >>>> stage Data Ingestion stage started <<<<<<]
+[2024-02-02 19:23:29,857:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 19:23:29,859:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 19:23:29,861:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 19:23:29,861:INFO: common: created directory at: artifacts]
+[2024-02-02 19:23:29,861:INFO: common: created directory at: artifacts/data_ingestion]
+[2024-02-02 19:23:29,862:INFO: data_ingestion: File already exists of size : ~ 4315 KB]
+[2024-02-02 19:23:31,426:INFO: main: >>>>> stage Data Ingestion stage complated <<<<<
+
+x======x]
+[2024-02-02 19:23:31,427:INFO: main: >>>> stage Data Validation stage started <<<<<<]
+[2024-02-02 19:23:31,431:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 19:23:31,432:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 19:23:31,434:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 19:23:31,434:INFO: common: created directory at: artifacts]
+[2024-02-02 19:23:31,435:INFO: common: created directory at: artifacts/data_validation]
+[2024-02-02 19:23:31,448:INFO: main: >>>>> stage Data Validation stage complated <<<<<
+
+x======x]
+[2024-02-02 19:23:31,448:INFO: main: >>>> stage Data Transformation stage started <<<<<<]
+[2024-02-02 19:23:31,473:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 19:23:31,475:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 19:23:31,479:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 19:23:31,480:INFO: common: created directory at: artifacts]
+[2024-02-02 19:23:31,480:INFO: common: created directory at: artifacts/data_transformation]
+[2024-02-02 19:27:02,210:INFO: main: >>>>> stage Data Transformation stage complated <<<<<
+
+x======x]
+[2024-02-02 19:27:02,211:INFO: main: >>>> stage Model Trainer stage started <<<<<<]
+[2024-02-02 19:27:02,215:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 19:27:02,217:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 19:27:02,218:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 19:27:02,218:INFO: common: created directory at: artifacts]
+[2024-02-02 19:27:02,219:INFO: common: created directory at: artifacts/model_trainer]
+[2024-02-02 19:27:07,876:INFO: main: >>>>> stage Model Trainer stage complated <<<<<
+
+x======x]
+[2024-02-02 19:27:07,877:INFO: main: >>>> stage Model Evaluation stage started <<<<<<]
+[2024-02-02 19:27:07,881:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 19:27:07,882:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 19:27:07,883:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 19:27:07,884:INFO: common: created directory at: artifacts]
+[2024-02-02 19:27:07,884:INFO: common: created directory at: artifacts/model_evaluation]
+[2024-02-02 19:27:08,423:INFO: common: json file saved at: artifacts\model_evaluation\metrics.json]
+[2024-02-02 19:27:13,702:INFO: main: >>>>> stage Model Evaluation stage complated <<<<<
+
+x======x]
+[2024-02-02 20:08:30,625:WARNING: _guards: No sympy found]
+[2024-02-02 20:13:18,756:WARNING: _guards: No sympy found]

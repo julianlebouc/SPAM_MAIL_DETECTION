@@ -1,4 +1,4 @@
-artifact_location: file:///home/asini/Workspace/Enseignement/M2/MLOps/e2e-mlops/mlruns/0
+artifact_location: file://C:/Users/Julian/OneDrive/Desktop/COURS/S9/MLOPS/SPAM_MAIL_DETECTION/mlruns/0
 creation_time: 1698319212416
 experiment_id: '0'
 last_update_time: 1698319212416

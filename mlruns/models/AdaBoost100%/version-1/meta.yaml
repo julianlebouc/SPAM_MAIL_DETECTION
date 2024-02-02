@@ -1,0 +1,12 @@
+creation_timestamp: 1706898265951
+current_stage: None
+description: ''
+last_updated_timestamp: 1706898265951
+name: AdaBoost100%
+run_id: 30c9974a845f4f049cd7fb28e379b786
+run_link: ''
+source: file:///home/asini/Workspace/Enseignement/M2/MLOps/e2e-mlops/mlruns/0/30c9974a845f4f049cd7fb28e379b786/artifacts/model
+status: READY
+status_message: null
+user_id: null
+version: 1

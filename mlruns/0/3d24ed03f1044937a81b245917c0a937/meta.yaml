@@ -1,0 +1,15 @@
+artifact_uri: file://C:/Users/Julian/OneDrive/Desktop/COURS/S9/MLOPS/SPAM_MAIL_DETECTION/mlruns/0/3d24ed03f1044937a81b245917c0a937/artifacts
+end_time: 1706900176593
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3d24ed03f1044937a81b245917c0a937
+run_name: magnificent-bird-341
+run_uuid: 3d24ed03f1044937a81b245917c0a937
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706899929925
+status: 4
+tags: []
+user_id: Julian

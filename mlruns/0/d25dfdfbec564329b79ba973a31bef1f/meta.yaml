@@ -1,0 +1,15 @@
+artifact_uri: file://C:/Users/Julian/OneDrive/Desktop/COURS/S9/MLOPS/SPAM_MAIL_DETECTION/mlruns/0/d25dfdfbec564329b79ba973a31bef1f/artifacts
+end_time: 1706900910922
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d25dfdfbec564329b79ba973a31bef1f
+run_name: honorable-cod-261
+run_uuid: d25dfdfbec564329b79ba973a31bef1f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706900611753
+status: 4
+tags: []
+user_id: Julian
