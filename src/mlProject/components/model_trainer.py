@@ -23,7 +23,7 @@ class ModelTrainer:
             classes = pickle.load(file)
         
         X_train, X_test, y_train, y_test = train_test_split(data, classes, stratify=classes, test_size=0.2)
-        clf = AdaBoostClassifier()
+        clf = AdaBoostClassifier(n_estimators=self.config.n_estimators, learning_rate=self.config.learning_rate,algorithm=self.config.algorithm)
         clf.fit(X_train, y_train)
 
         joblib.dump(clf,os.path.join(self.config.root_dir,self.config.model_name))

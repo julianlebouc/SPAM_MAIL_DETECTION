@@ -1,0 +1,15 @@
+artifact_uri: file:///home/asini/Workspace/Enseignement/M2/MLOps/e2e-mlops/mlruns/0/edb5b1575ef84a71822c3d732b3dd6d8/artifacts
+end_time: 1706890130349
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: edb5b1575ef84a71822c3d732b3dd6d8
+run_name: nimble-ant-806
+run_uuid: edb5b1575ef84a71822c3d732b3dd6d8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706890120783
+status: 3
+tags: []
+user_id: Julian

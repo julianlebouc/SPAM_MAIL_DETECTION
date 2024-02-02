@@ -1,0 +1,15 @@
+artifact_uri: file:///home/asini/Workspace/Enseignement/M2/MLOps/e2e-mlops/mlruns/0/30c9974a845f4f049cd7fb28e379b786/artifacts
+end_time: 1706894837847
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 30c9974a845f4f049cd7fb28e379b786
+run_name: thoughtful-lamb-412
+run_uuid: 30c9974a845f4f049cd7fb28e379b786
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706894819326
+status: 3
+tags: []
+user_id: Julian

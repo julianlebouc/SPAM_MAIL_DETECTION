@@ -56,7 +56,7 @@ class ConfigurationManager:
 
     def  get_model_trainer(self)-> ModelTrainerConfig:
         config=self.config.model_trainer
-        params=self.params.ElasticNet
+        params=self.params.AdaBoostClassifier
         schema=self.schema.TARGET_COLUMN
         create_directories([config.root_dir])
 
@@ -65,8 +65,9 @@ class ConfigurationManager:
             train_data_path= config.train_data_path,
             test_data_path= config.test_data_path,
             model_name= config.model_name,
-            alpha= params.alpha,
-            l1_ratio= params.l1_ratio,
+            n_estimators= params.n_estimators,
+            learning_rate= params.learning_rate,
+            algorithm= params.algorithm,
             target_column= schema.name
         
         )
@@ -75,7 +76,7 @@ class ConfigurationManager:
 
     def  get_model_evaluation_config(self)-> ModelEvaluationConfig:
         config=self.config.model_evaluation
-        params=self.params.ElasticNet
+        params=self.params.AdaBoostClassifier
         schema=self.schema.TARGET_COLUMN
         create_directories([config.root_dir])
 
@@ -87,7 +88,7 @@ class ConfigurationManager:
             all_params= params,
             metric_file_name= config.metric_file_name,
             target_column= schema.name,
-            mlflow_uri="https://dagshub.com/AghilasSini/e2e-mlops.mlflow"
+            mlflow_uri="https://github.com/julianlebouc/SPAM_MAIL_DETECTION"
         
         )
         return model_evaluation_config

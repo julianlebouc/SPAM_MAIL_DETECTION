@@ -2166,3 +2166,598 @@ x======x]
 [2024-02-02 16:30:41,155:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 16:30:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
 [2024-02-02 16:30:41,159:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 16:30:41] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
 [2024-02-02 16:30:41,163:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 16:30:41] "[33mGET /static/assets/img/spam.gif HTTP/1.1[0m" 404 -]
+[2024-02-02 17:04:54,260:INFO: utils: NumExpr defaulting to 6 threads.]
+[2024-02-02 17:05:11,612:INFO: main: >>>> stage Data Ingestion stage started <<<<<<]
+[2024-02-02 17:05:11,622:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 17:05:11,624:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 17:05:11,629:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 17:05:11,630:INFO: common: created directory at: artifacts]
+[2024-02-02 17:05:11,631:INFO: common: created directory at: artifacts/data_ingestion]
+[2024-02-02 17:05:11,632:INFO: data_ingestion: File already exists of size : ~ 4315 KB]
+[2024-02-02 17:05:13,361:INFO: main: >>>>> stage Data Ingestion stage complated <<<<<
+
+x======x]
+[2024-02-02 17:05:13,361:INFO: main: >>>> stage Data Validation stage started <<<<<<]
+[2024-02-02 17:05:13,365:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 17:05:13,366:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 17:05:13,367:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 17:05:13,368:INFO: common: created directory at: artifacts]
+[2024-02-02 17:05:13,368:INFO: common: created directory at: artifacts/data_validation]
+[2024-02-02 17:05:13,375:INFO: main: >>>>> stage Data Validation stage complated <<<<<
+
+x======x]
+[2024-02-02 17:05:13,376:INFO: main: >>>> stage Data Transformation stage started <<<<<<]
+[2024-02-02 17:05:13,385:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 17:05:13,386:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 17:05:13,388:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 17:05:13,388:INFO: common: created directory at: artifacts]
+[2024-02-02 17:05:13,389:INFO: common: created directory at: artifacts/data_transformation]
+[2024-02-02 17:08:36,884:INFO: main: >>>>> stage Data Transformation stage complated <<<<<
+
+x======x]
+[2024-02-02 17:08:36,885:INFO: main: >>>> stage Model Trainer stage started <<<<<<]
+[2024-02-02 17:08:36,889:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 17:08:36,890:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 17:08:36,891:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 17:08:36,892:INFO: common: created directory at: artifacts]
+[2024-02-02 17:08:36,892:INFO: common: created directory at: artifacts/model_trainer]
+[2024-02-02 17:08:39,740:INFO: main: >>>>> stage Model Trainer stage complated <<<<<
+
+x======x]
+[2024-02-02 17:08:39,740:INFO: main: >>>> stage Model Evaluation stage started <<<<<<]
+[2024-02-02 17:08:39,744:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 17:08:39,745:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 17:08:39,746:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 17:08:39,746:INFO: common: created directory at: artifacts]
+[2024-02-02 17:08:39,747:INFO: common: created directory at: artifacts/model_evaluation]
+[2024-02-02 17:08:40,869:INFO: common: json file saved at: artifacts\model_evaluation\metrics.json]
+[2024-02-02 17:08:50,352:INFO: main: >>>>> stage Model Evaluation stage complated <<<<<
+
+x======x]
+[2024-02-02 17:17:37,264:INFO: utils: NumExpr defaulting to 6 threads.]
+[2024-02-02 17:17:40,767:INFO: main: >>>> stage Data Ingestion stage started <<<<<<]
+[2024-02-02 17:17:40,772:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 17:17:40,773:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 17:17:40,775:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 17:17:40,775:INFO: common: created directory at: artifacts]
+[2024-02-02 17:17:40,776:INFO: common: created directory at: artifacts/data_ingestion]
+[2024-02-02 17:17:40,776:INFO: data_ingestion: File already exists of size : ~ 4315 KB]
+[2024-02-02 17:17:42,213:INFO: main: >>>>> stage Data Ingestion stage complated <<<<<
+
+x======x]
+[2024-02-02 17:17:42,214:INFO: main: >>>> stage Data Validation stage started <<<<<<]
+[2024-02-02 17:17:42,218:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 17:17:42,219:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 17:17:42,220:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 17:17:42,221:INFO: common: created directory at: artifacts]
+[2024-02-02 17:17:42,221:INFO: common: created directory at: artifacts/data_validation]
+[2024-02-02 17:17:42,226:INFO: main: >>>>> stage Data Validation stage complated <<<<<
+
+x======x]
+[2024-02-02 17:17:42,227:INFO: main: >>>> stage Data Transformation stage started <<<<<<]
+[2024-02-02 17:17:42,235:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 17:17:42,237:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 17:17:42,238:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 17:17:42,238:INFO: common: created directory at: artifacts]
+[2024-02-02 17:17:42,239:INFO: common: created directory at: artifacts/data_transformation]
+[2024-02-02 17:17:51,256:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.24:8080]
+[2024-02-02 17:17:51,257:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-02 17:17:58,149:ERROR: _internal: 192.168.1.24 - - [02/Feb/2024 17:17:58] code 400, message Bad request version ('tGx\x10äUB(\x8b\x02\x00')]
+[2024-02-02 17:17:58,150:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:17:58] "[35m[1m\x16\x03\x01\x02\x1a\x01\x00\x02\x16\x03\x03\x89y\x0bsóÃ\x18E Ò0\x16\x8e\x19]¼Éo»y_ã\x0d\x09ŞB¨Újğ3Ä x.\x1c¹\x1c\x02T2v\x9d£\x02\x92ıâWRúk\x89ÉÉ\x84$\x84%ÌUeCzq\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01­\x1a\x1a\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06ºº\x03\x04\x03\x03\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x003\x00+\x00)ÊÊ\x00\x01\x00\x00\x1d\x00 \x7f9K\x1c\x90ü\x91\x98¦dÙ\x99Ç\x81ö !âà\x98\x89\x0ctGx\x10äUB(\x8b\x02\x00[0m" HTTPStatus.BAD_REQUEST -]
+[2024-02-02 17:17:58,152:ERROR: _internal: 192.168.1.24 - - [02/Feb/2024 17:17:58] code 400, message Bad request version ('¾eË\x86¡Ï\x054hg\x9e&`D1ß1æ\x05¶\x8c¨\x17·Ûy{_(\x01üt\x00')]
+[2024-02-02 17:17:58,153:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:17:58] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03k»å\x0c9\x96\x9d\x8cF\x07É\x01D±R\x13\x81^ò\x8bD\x8ewfËûT\x9eôå\x03Ü ¾eË\x86¡Ï\x054hg\x9e&`D1ß1æ\x05¶\x8c¨\x17·Ûy{_(\x01üt\x00 [0m" HTTPStatus.BAD_REQUEST -]
+[2024-02-02 17:18:00,439:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:18:00] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:18:00,637:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:18:00] "GET /static/css2/style.css HTTP/1.1" 200 -]
+[2024-02-02 17:18:00,639:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:18:00] "GET /static/css/styles.css HTTP/1.1" 200 -]
+[2024-02-02 17:18:00,650:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:18:00] "GET /static/js/scripts.js HTTP/1.1" 200 -]
+[2024-02-02 17:18:00,851:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:18:00] "GET /static/assets/img/form-v9.jpg HTTP/1.1" 200 -]
+[2024-02-02 17:18:01,076:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:18:01] "GET /static/assets/favicon.ico HTTP/1.1" 200 -]
+[2024-02-02 17:18:16,552:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:18:16] "POST /predict HTTP/1.1" 200 -]
+[2024-02-02 17:18:16,612:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:18:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:18:16,617:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:18:16] "[33mGET /static/assets/img/spam.gif HTTP/1.1[0m" 404 -]
+[2024-02-02 17:18:16,619:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:18:16] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:18:21,317:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:18:21] "[33mGET /static/assets/img/spam.gif HTTP/1.1[0m" 404 -]
+[2024-02-02 17:18:21,674:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:18:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2024-02-02 17:20:07,994:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.24:8080]
+[2024-02-02 17:20:07,995:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-02 17:20:16,886:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:20:16] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:20:16,998:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:20:16] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:20:17,009:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:20:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:20:17,020:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:20:17] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:20:17,032:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:20:17] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:20:17,109:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:20:17] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -]
+[2024-02-02 17:20:20,775:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:20:20] "POST /predict HTTP/1.1" 200 -]
+[2024-02-02 17:20:20,838:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:20:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:20:20,839:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:20:20] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:20:47,204:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:20:47] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:20:47,266:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:20:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:20:47,270:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:20:47] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:20:47,272:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:20:47] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:20:47,324:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:20:47] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:20:54,065:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:20:54] "POST /predict HTTP/1.1" 200 -]
+[2024-02-02 17:20:54,129:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:20:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:20:54,132:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:20:54] "GET /static/assets/img/not-spam.gif HTTP/1.1" 200 -]
+[2024-02-02 17:20:54,133:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:20:54] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:21:03,371:INFO: main: >>>>> stage Data Transformation stage complated <<<<<
+
+x======x]
+[2024-02-02 17:21:03,372:INFO: main: >>>> stage Model Trainer stage started <<<<<<]
+[2024-02-02 17:21:03,377:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 17:21:03,378:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 17:21:03,379:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 17:21:03,379:INFO: common: created directory at: artifacts]
+[2024-02-02 17:21:03,380:INFO: common: created directory at: artifacts/model_trainer]
+[2024-02-02 17:21:03,380:ERROR: main: ModelTrainerConfig.__init__() got an unexpected keyword argument 'n_estimators']
+Traceback (most recent call last):
+  File "C:\Users\Julian\OneDrive\Desktop\COURS\S9\MLOPS\SPAM_MAIL_DETECTION\main.py", line 66, in <module>
+    model_trainer.main()
+  File "C:\Users\Julian\OneDrive\Desktop\COURS\S9\MLOPS\SPAM_MAIL_DETECTION\src\mlProject\pipeline\stage_04_model_trainer.py", line 16, in main
+    model_trainer_config=config.get_model_trainer()
+  File "C:\Users\Julian\OneDrive\Desktop\COURS\S9\MLOPS\SPAM_MAIL_DETECTION\src\mlProject\config\configuration.py", line 63, in get_model_trainer
+    model_trainer_config=ModelTrainerConfig(
+TypeError: ModelTrainerConfig.__init__() got an unexpected keyword argument 'n_estimators'
+[2024-02-02 17:21:23,125:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:23] "POST /predict HTTP/1.1" 200 -]
+[2024-02-02 17:21:23,189:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:21:23,190:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:23] "[36mGET /static/assets/img/not-spam.gif HTTP/1.1[0m" 304 -]
+[2024-02-02 17:21:23,191:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:23] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:21:27,820:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:27] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:21:27,884:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:21:27,888:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:27] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:21:27,888:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:27] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:21:27,951:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:27] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:21:30,783:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:30] "POST /predict HTTP/1.1" 200 -]
+[2024-02-02 17:21:30,842:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:21:30,844:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:30] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:21:32,942:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:32] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:21:32,999:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:32] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:21:33,002:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:33] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:21:33,002:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:33] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:21:33,053:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:33] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:21:34,681:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:34] "POST /predict HTTP/1.1" 200 -]
+[2024-02-02 17:21:34,741:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:21:34,743:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:34] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:21:36,476:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:36] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:21:36,531:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:36] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:21:36,533:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:36] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:21:36,534:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:36] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:21:36,573:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:21:36] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:22:44,776:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.24:8080]
+[2024-02-02 17:22:44,777:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-02 17:22:49,480:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:22:49] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:22:49,581:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:22:49] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:22:49,604:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:22:49] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:22:49,606:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:22:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:22:49,620:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:22:49] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:22:49,686:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:22:49] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -]
+[2024-02-02 17:22:53,784:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:22:53] "POST /predict HTTP/1.1" 200 -]
+[2024-02-02 17:22:53,840:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:22:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:22:53,845:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:22:53] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:23:44,715:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:23:44] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:23:44,788:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:23:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:23:44,790:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:23:44] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:23:44,792:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:23:44] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:23:44,836:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:23:44] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:23:48,180:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:23:48] "POST /predict HTTP/1.1" 200 -]
+[2024-02-02 17:23:48,238:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:23:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:23:48,243:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:23:48] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:26:18,949:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.24:8080]
+[2024-02-02 17:26:18,950:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-02 17:26:26,270:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:26:26] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:26:26,453:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:26:26] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:26:26,463:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:26:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:26:26,464:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:26:26] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:26:26,488:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:26:26] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:26:26,704:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:26:26] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -]
+[2024-02-02 17:26:29,385:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:26:29] "POST /predict HTTP/1.1" 200 -]
+[2024-02-02 17:26:29,443:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:26:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:26:29,447:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:26:29] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:27:42,131:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.24:8080]
+[2024-02-02 17:27:42,133:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-02 17:27:44,181:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:27:44] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:27:44,364:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:27:44] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:27:44,374:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:27:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:27:44,376:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:27:44] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:27:44,429:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:27:44] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:27:44,605:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:27:44] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -]
+[2024-02-02 17:27:47,793:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:27:47] "POST /predict HTTP/1.1" 200 -]
+[2024-02-02 17:27:47,847:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:27:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:27:47,850:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:27:47] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:31:07,897:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.24:8080]
+[2024-02-02 17:31:07,898:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-02 17:31:10,879:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 17:31:10] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:31:11,088:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 17:31:11] "GET /static/css/styles.css HTTP/1.1" 200 -]
+[2024-02-02 17:31:11,111:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 17:31:11] "GET /static/css2/style.css HTTP/1.1" 200 -]
+[2024-02-02 17:31:11,130:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 17:31:11] "GET /static/js/scripts.js HTTP/1.1" 200 -]
+[2024-02-02 17:31:11,290:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 17:31:11] "GET /static/assets/img/form-v9.jpg HTTP/1.1" 200 -]
+[2024-02-02 17:31:11,527:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 17:31:11] "GET /static/assets/favicon.ico HTTP/1.1" 200 -]
+[2024-02-02 17:31:14,709:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 17:31:14] "POST /predict HTTP/1.1" 200 -]
+[2024-02-02 17:31:14,762:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 17:31:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:31:14,764:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 17:31:14] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:31:24,913:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 17:31:24] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:31:24,968:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 17:31:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:31:24,970:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 17:31:24] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:31:24,972:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 17:31:24] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:31:25,017:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 17:31:25] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:31:29,867:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 17:31:29] "POST /predict HTTP/1.1" 200 -]
+[2024-02-02 17:31:29,925:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 17:31:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:31:29,925:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 17:31:29] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:31:37,590:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 17:31:37] "POST /predict HTTP/1.1" 200 -]
+[2024-02-02 17:31:37,645:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 17:31:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:31:37,645:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 17:31:37] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:33:40,081:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.24:8080]
+[2024-02-02 17:33:40,082:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-02 17:33:43,568:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:33:43] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:33:43,779:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:33:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:33:43,792:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:33:43] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:33:43,833:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:33:43] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:33:43,851:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:33:43] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:33:45,700:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:33:45] "POST /predict HTTP/1.1" 200 -]
+[2024-02-02 17:33:45,757:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:33:45] "[33mGET /'https://uploads.dailydot.com/c26/02/0b070ed92fe8daf4.gif?auto=compress&fm=gif' HTTP/1.1[0m" 404 -]
+[2024-02-02 17:33:45,759:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:33:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:33:45,765:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:33:45] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:33:50,652:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:33:50] "POST /predict HTTP/1.1" 200 -]
+[2024-02-02 17:33:50,709:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:33:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:33:50,711:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:33:50] "[33mGET /'https://media.tenor.com/mUR6IIN2CnEAAAAM/wow-surprised.gif' HTTP/1.1[0m" 404 -]
+[2024-02-02 17:33:50,714:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:33:50] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:33:58,456:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:33:58] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:33:58,513:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:33:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:33:58,515:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:33:58] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:33:58,516:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:33:58] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:33:58,556:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:33:58] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:34:03,235:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:34:03] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:34:03,285:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:34:03] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:34:03,286:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:34:03] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:34:03,287:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:34:03] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:34:03,323:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:34:03] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:36:37,203:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.24:8080]
+[2024-02-02 17:36:37,203:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-02 17:36:40,435:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:36:40] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:36:40,555:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:36:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:36:40,574:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:36:40] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:36:40,591:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:36:40] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:36:40,592:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:36:40] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:36:40,737:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:36:40] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -]
+[2024-02-02 17:38:14,547:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.24:8080]
+[2024-02-02 17:38:14,548:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-02 17:38:22,034:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:38:22] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:38:22,162:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:38:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:38:22,167:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:38:22] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:38:22,176:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:38:22] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:38:22,190:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:38:22] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:38:22,245:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:38:22] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -]
+[2024-02-02 17:40:19,414:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.24:8080]
+[2024-02-02 17:40:19,415:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-02 17:40:22,996:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:40:22] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:40:23,125:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:40:23] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:40:23,130:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:40:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:40:23,135:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:40:23] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:40:23,162:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:40:23] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:43:42,971:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.24:8080]
+[2024-02-02 17:43:42,972:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-02 17:43:45,399:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:43:45] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:43:45,536:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:43:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:43:45,553:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:43:45] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:43:45,554:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:43:45] "GET /static/css2/style.css HTTP/1.1" 200 -]
+[2024-02-02 17:43:45,578:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:43:45] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:43:45,650:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:43:45] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -]
+[2024-02-02 17:44:11,043:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.24:8080]
+[2024-02-02 17:44:11,044:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-02 17:44:13,950:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:44:13] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:44:14,063:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:44:14] "GET /static/css2/style.css HTTP/1.1" 200 -]
+[2024-02-02 17:44:14,075:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:44:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:44:14,077:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:44:14] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:44:14,103:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:44:14] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:44:14,171:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:44:14] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -]
+[2024-02-02 17:46:20,397:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.24:8080]
+[2024-02-02 17:46:20,398:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-02 17:46:23,369:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:46:23] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:46:23,496:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:46:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:46:23,512:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:46:23] "GET /static/css2/style.css HTTP/1.1" 200 -]
+[2024-02-02 17:46:23,518:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:46:23] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:46:23,542:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:46:23] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:46:23,604:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:46:23] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -]
+[2024-02-02 17:47:58,465:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.24:8080]
+[2024-02-02 17:47:58,466:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-02 17:48:00,164:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:48:00] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:48:00,287:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:48:00] "GET /static/css2/style.css HTTP/1.1" 200 -]
+[2024-02-02 17:48:00,303:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:48:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:48:00,304:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:48:00] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:48:00,328:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:48:00] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:48:00,402:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:48:00] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -]
+[2024-02-02 17:48:50,469:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.24:8080]
+[2024-02-02 17:48:50,470:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-02 17:48:51,272:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:48:51] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:48:51,423:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:48:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:48:51,427:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:48:51] "GET /static/css2/style.css HTTP/1.1" 200 -]
+[2024-02-02 17:48:51,428:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:48:51] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:48:51,462:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:48:51] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:48:51,533:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:48:51] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -]
+[2024-02-02 17:49:49,045:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.24:8080]
+[2024-02-02 17:49:49,046:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-02 17:49:51,946:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:49:51] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:49:52,092:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:49:52] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:49:52,103:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:49:52] "GET /static/css/styles.css HTTP/1.1" 200 -]
+[2024-02-02 17:49:52,104:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:49:52] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:49:52,154:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:49:52] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:49:52,224:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:49:52] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -]
+[2024-02-02 17:51:24,937:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.24:8080]
+[2024-02-02 17:51:24,938:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-02 17:51:26,018:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:51:26] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:51:26,140:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:51:26] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:51:26,165:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:51:26] "GET /static/css/styles.css HTTP/1.1" 200 -]
+[2024-02-02 17:51:26,174:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:51:26] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:51:26,195:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:51:26] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:51:26,268:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:51:26] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -]
+[2024-02-02 17:52:12,573:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.24:8080]
+[2024-02-02 17:52:12,574:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-02 17:52:21,082:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:52:21] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:52:21,205:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:52:21] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:52:21,216:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:52:21] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:52:21,227:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:52:21] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:52:21,239:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:52:21] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:52:21,297:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:52:21] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -]
+[2024-02-02 17:52:30,528:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:52:30] "POST /predict HTTP/1.1" 200 -]
+[2024-02-02 17:52:30,589:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:52:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:52:30,592:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:52:30] "[33mGET /'https://media.tenor.com/mUR6IIN2CnEAAAAM/wow-surprised.gif' HTTP/1.1[0m" 404 -]
+[2024-02-02 17:52:30,597:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:52:30] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:52:38,669:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:52:38] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:52:38,730:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:52:38] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:52:38,731:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:52:38] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:52:38,733:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:52:38] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:52:38,782:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:52:38] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:52:55,568:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.24:8080]
+[2024-02-02 17:52:55,569:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-02 17:52:59,988:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:52:59] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:53:00,090:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:53:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:53:00,106:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:53:00] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:53:00,118:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:53:00] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:53:00,127:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:53:00] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:53:00,187:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:53:00] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -]
+[2024-02-02 17:53:03,280:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:53:03] "POST /predict HTTP/1.1" 200 -]
+[2024-02-02 17:53:03,337:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:53:03] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:53:03,338:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:53:03] "[33mGET /'https://media.tenor.com/mUR6IIN2CnEAAAAM/wow-surprised.gif' HTTP/1.1[0m" 404 -]
+[2024-02-02 17:53:03,343:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:53:03] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:53:10,804:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:53:10] "GET / HTTP/1.1" 200 -]
+[2024-02-02 17:53:10,864:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:53:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:53:10,866:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:53:10] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:53:10,866:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:53:10] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:53:10,898:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:53:10] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 17:53:14,547:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:53:14] "POST /predict HTTP/1.1" 200 -]
+[2024-02-02 17:53:14,602:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:53:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 17:53:14,604:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:53:14] "[33mGET /'https://uploads.dailydot.com/c26/02/0b070ed92fe8daf4.gif?auto=compress&fm=gif' HTTP/1.1[0m" 404 -]
+[2024-02-02 17:53:14,607:INFO: _internal: 192.168.1.24 - - [02/Feb/2024 17:53:14] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 17:58:17,147:INFO: utils: NumExpr defaulting to 6 threads.]
+[2024-02-02 17:58:20,505:INFO: main: >>>> stage Data Ingestion stage started <<<<<<]
+[2024-02-02 17:58:20,509:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 17:58:20,515:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 17:58:20,516:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 17:58:20,517:INFO: common: created directory at: artifacts]
+[2024-02-02 17:58:20,517:INFO: common: created directory at: artifacts/data_ingestion]
+[2024-02-02 17:58:20,517:INFO: data_ingestion: File already exists of size : ~ 4315 KB]
+[2024-02-02 17:58:21,961:INFO: main: >>>>> stage Data Ingestion stage complated <<<<<
+
+x======x]
+[2024-02-02 17:58:21,961:INFO: main: >>>> stage Data Validation stage started <<<<<<]
+[2024-02-02 17:58:21,965:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 17:58:21,966:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 17:58:21,967:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 17:58:21,968:INFO: common: created directory at: artifacts]
+[2024-02-02 17:58:21,968:INFO: common: created directory at: artifacts/data_validation]
+[2024-02-02 17:58:21,974:INFO: main: >>>>> stage Data Validation stage complated <<<<<
+
+x======x]
+[2024-02-02 17:58:21,974:INFO: main: >>>> stage Data Transformation stage started <<<<<<]
+[2024-02-02 17:58:21,987:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 17:58:21,988:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 17:58:21,989:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 17:58:21,990:INFO: common: created directory at: artifacts]
+[2024-02-02 17:58:21,990:INFO: common: created directory at: artifacts/data_transformation]
+[2024-02-02 18:01:35,242:INFO: main: >>>>> stage Data Transformation stage complated <<<<<
+
+x======x]
+[2024-02-02 18:01:35,243:INFO: main: >>>> stage Model Trainer stage started <<<<<<]
+[2024-02-02 18:01:35,248:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 18:01:35,249:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 18:01:35,250:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 18:01:35,251:INFO: common: created directory at: artifacts]
+[2024-02-02 18:01:35,251:INFO: common: created directory at: artifacts/model_trainer]
+[2024-02-02 18:01:35,276:ERROR: main: 'ModelTrainer' object has no attribute 'cong']
+Traceback (most recent call last):
+  File "C:\Users\Julian\OneDrive\Desktop\COURS\S9\MLOPS\SPAM_MAIL_DETECTION\main.py", line 66, in <module>
+    model_trainer.main()
+  File "C:\Users\Julian\OneDrive\Desktop\COURS\S9\MLOPS\SPAM_MAIL_DETECTION\src\mlProject\pipeline\stage_04_model_trainer.py", line 18, in main
+    model_trainer.train()
+  File "C:\Users\Julian\OneDrive\Desktop\COURS\S9\MLOPS\SPAM_MAIL_DETECTION\src\mlProject\components\model_trainer.py", line 26, in train
+    clf = AdaBoostClassifier(n_estimators=self.config.n_estimators, learning_rate=self.cong.learning_rate,algorithm=self.config.algorithm)
+AttributeError: 'ModelTrainer' object has no attribute 'cong'
+[2024-02-02 18:05:20,155:INFO: utils: NumExpr defaulting to 6 threads.]
+[2024-02-02 18:05:23,610:INFO: main: >>>> stage Data Ingestion stage started <<<<<<]
+[2024-02-02 18:05:23,614:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 18:05:23,620:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 18:05:23,621:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 18:05:23,622:INFO: common: created directory at: artifacts]
+[2024-02-02 18:05:23,622:INFO: common: created directory at: artifacts/data_ingestion]
+[2024-02-02 18:05:24,105:INFO: data_ingestion: artifacts/data_ingestion/data_mails.zip download! with following info: 
+Server: GitHub.com
+Date: Fri, 02 Feb 2024 17:05:24 GMT
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With
+ETag: W/"929e26d9000f6edd0cfe4b3d54e0ccd8"
+Cache-Control: max-age=0, private, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer-when-downgrade
+Content-Security-Policy: default-src 'none'; base-uri 'self'; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events api.githubcopilot.com objects-origin.githubusercontent.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/
+Set-Cookie: _gh_sess=mW%2B6FEiSogNM7wwZ8uVgCnyv6m%2BT8xvdi03LYGA5O2QXL64voYAFZ1LyW0hBtnUzk4IZrtCLx4ELeEWrCGQ6%2FNp6Bi1l6VqS258e9lglhGh7FFSXfqdlNwWq6QgaNiLQqrVy9lAHCJgcvcgMVjrH7%2FuyhbmoJD5vaEwBJDKdez7DvtXFvaGHuJlGlFm9RJVmxPmhP8B81cwwPpX4xbI420ogUwlZg%2FvtBSKnh8xerADp165Z556Rkg0jFF4PlhO6OsbcpLwMpWSp%2BGZeOuxSBg%3D%3D--FyxW04RoIUU5BxXc--bNqkWz7Znut%2FD0nTb1niNg%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: _octo=GH1.1.843829370.1706893524; Path=/; Domain=github.com; Expires=Sun, 02 Feb 2025 17:05:24 GMT; Secure; SameSite=Lax
+Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Sun, 02 Feb 2025 17:05:24 GMT; HttpOnly; Secure; SameSite=Lax
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-GitHub-Request-Id: FB35:3D1041:98B20D0:9A6F3A5:65BD20D4
+connection: close
+
+]
+[2024-02-02 18:05:24,130:ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "C:\Users\Julian\OneDrive\Desktop\COURS\S9\MLOPS\SPAM_MAIL_DETECTION\main.py", line 20, in <module>
+    data_ingestion.main()
+  File "C:\Users\Julian\OneDrive\Desktop\COURS\S9\MLOPS\SPAM_MAIL_DETECTION\src\mlProject\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.extract_zip_file()
+  File "C:\Users\Julian\OneDrive\Desktop\COURS\S9\MLOPS\SPAM_MAIL_DETECTION\src\mlProject\components\data_ingestion.py", line 38, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file,'r') as zip_ref:
+  File "E:\anaconda3\lib\zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "E:\anaconda3\lib\zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-02-02 18:09:33,284:INFO: utils: NumExpr defaulting to 6 threads.]
+[2024-02-02 18:09:36,650:INFO: main: >>>> stage Data Ingestion stage started <<<<<<]
+[2024-02-02 18:09:36,654:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 18:09:36,660:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 18:09:36,661:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 18:09:36,661:INFO: common: created directory at: artifacts]
+[2024-02-02 18:09:36,662:INFO: common: created directory at: artifacts/data_ingestion]
+[2024-02-02 18:09:36,662:INFO: data_ingestion: File already exists of size : ~ 132 KB]
+[2024-02-02 18:09:36,687:ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "C:\Users\Julian\OneDrive\Desktop\COURS\S9\MLOPS\SPAM_MAIL_DETECTION\main.py", line 20, in <module>
+    data_ingestion.main()
+  File "C:\Users\Julian\OneDrive\Desktop\COURS\S9\MLOPS\SPAM_MAIL_DETECTION\src\mlProject\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.extract_zip_file()
+  File "C:\Users\Julian\OneDrive\Desktop\COURS\S9\MLOPS\SPAM_MAIL_DETECTION\src\mlProject\components\data_ingestion.py", line 38, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file,'r') as zip_ref:
+  File "E:\anaconda3\lib\zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "E:\anaconda3\lib\zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-02-02 18:23:11,205:INFO: utils: NumExpr defaulting to 6 threads.]
+[2024-02-02 18:23:34,240:INFO: main: >>>> stage Data Ingestion stage started <<<<<<]
+[2024-02-02 18:23:34,250:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 18:23:34,271:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 18:23:34,277:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 18:23:34,278:INFO: common: created directory at: artifacts]
+[2024-02-02 18:23:34,278:INFO: common: created directory at: artifacts/data_ingestion]
+[2024-02-02 18:23:34,279:INFO: data_ingestion: File already exists of size : ~ 4315 KB]
+[2024-02-02 18:23:36,037:INFO: main: >>>>> stage Data Ingestion stage complated <<<<<
+
+x======x]
+[2024-02-02 18:23:36,039:INFO: main: >>>> stage Data Validation stage started <<<<<<]
+[2024-02-02 18:23:36,043:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 18:23:36,044:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 18:23:36,045:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 18:23:36,046:INFO: common: created directory at: artifacts]
+[2024-02-02 18:23:36,048:INFO: common: created directory at: artifacts/data_validation]
+[2024-02-02 18:23:36,058:INFO: main: >>>>> stage Data Validation stage complated <<<<<
+
+x======x]
+[2024-02-02 18:23:36,059:INFO: main: >>>> stage Data Transformation stage started <<<<<<]
+[2024-02-02 18:23:36,070:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 18:23:36,073:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 18:23:36,076:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 18:23:36,077:INFO: common: created directory at: artifacts]
+[2024-02-02 18:23:36,077:INFO: common: created directory at: artifacts/data_transformation]
+[2024-02-02 18:26:52,613:INFO: main: >>>>> stage Data Transformation stage complated <<<<<
+
+x======x]
+[2024-02-02 18:26:52,613:INFO: main: >>>> stage Model Trainer stage started <<<<<<]
+[2024-02-02 18:26:52,618:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 18:26:52,619:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 18:26:52,620:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 18:26:52,621:INFO: common: created directory at: artifacts]
+[2024-02-02 18:26:52,621:INFO: common: created directory at: artifacts/model_trainer]
+[2024-02-02 18:26:58,075:INFO: main: >>>>> stage Model Trainer stage complated <<<<<
+
+x======x]
+[2024-02-02 18:26:58,075:INFO: main: >>>> stage Model Evaluation stage started <<<<<<]
+[2024-02-02 18:26:58,079:INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-02 18:26:58,080:INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-02 18:26:58,082:INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-02-02 18:26:58,082:INFO: common: created directory at: artifacts]
+[2024-02-02 18:26:58,083:INFO: common: created directory at: artifacts/model_evaluation]
+[2024-02-02 18:26:59,440:INFO: common: json file saved at: artifacts\model_evaluation\metrics.json]
+[2024-02-02 18:27:17,850:INFO: main: >>>>> stage Model Evaluation stage complated <<<<<
+
+x======x]
+[2024-02-02 18:29:25,893:INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.24:8080]
+[2024-02-02 18:29:25,894:INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-02 18:29:28,963:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 18:29:28] "GET / HTTP/1.1" 200 -]
+[2024-02-02 18:29:29,172:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 18:29:29] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 18:29:29,180:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 18:29:29] "GET /static/css/styles.css HTTP/1.1" 200 -]
+[2024-02-02 18:29:29,192:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 18:29:29] "GET /static/css2/style.css HTTP/1.1" 200 -]
+[2024-02-02 18:29:29,230:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 18:29:29] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-02-02 18:29:43,719:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 18:29:43] "POST /predict HTTP/1.1" 200 -]
+[2024-02-02 18:29:43,766:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 18:29:43] "[33mGET /'https://media.tenor.com/mUR6IIN2CnEAAAAM/wow-surprised.gif' HTTP/1.1[0m" 404 -]
+[2024-02-02 18:29:43,767:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 18:29:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 18:29:43,772:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 18:29:43] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 18:30:00,148:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 18:30:00] "POST /predict HTTP/1.1" 200 -]
+[2024-02-02 18:30:00,195:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 18:30:00] "[33mGET /'https://uploads.dailydot.com/c26/02/0b070ed92fe8daf4.gif?auto=compress&fm=gif' HTTP/1.1[0m" 404 -]
+[2024-02-02 18:30:00,196:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 18:30:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 18:30:00,197:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 18:30:00] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 18:30:04,387:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 18:30:04] "GET / HTTP/1.1" 200 -]
+[2024-02-02 18:30:04,433:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 18:30:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-02-02 18:30:04,438:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 18:30:04] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-02-02 18:30:04,438:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 18:30:04] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-02-02 18:30:04,459:INFO: _internal: 127.0.0.1 - - [02/Feb/2024 18:30:04] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
