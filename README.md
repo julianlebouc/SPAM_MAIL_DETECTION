@@ -1,5 +1,12 @@
-# Spam Mail Prediction with MLFlow
+# Spam Mail Detection with MLFlow
 ## Julian LEBOUC, Nicolas TACHET, Abel COUTOLLEAU, Andy HARAN
+Ce projet s'inscrit dans le cadre du module 'Machine Learning Operations' du Master 2 Informatique - IA 2023/2024 de l'université du Mans.
+Le but de ce dernier est de réaliser un projet de machine learning end-to-end en utilisant MLFlow
+Nous avons décidé de mettre un place un modèle prédisant la nature d'un email, à savoir : spam ou non spam
+Il est possible de modifier les données utilisées ainsi que les paramètres du modèle dans les fichiers de configuration.
+Les paramètres, modèles, métriques et environnements sont loggés via MLFlow Tracking.
+Une interface WEB a été mise en place pour tester le modèle.
+
 
 # How to run?
 
@@ -44,7 +51,12 @@ pip install -r requirements.txt
 python main.py
 ```
 
-### STEP 04- App Testing
+### STEP 04- MLFlow Tracking
+```bash
+mlflow ui
+```
+
+### STEP 05- App Testing
 ```bash
 python app.py
 ```
